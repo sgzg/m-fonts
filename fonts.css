@@ -1,0 +1,111 @@
+/* ==========================================================================
+   FONTS FOR HTML EMAIL
+   Paste inside a <style> block in the <head> of the email, or merge into
+   your existing email stylesheet.
+
+   BEFORE SENDING:
+   1. Upload the .otf files to a public HTTPS location.
+   2. Replace https://YOUR-DOMAIN.com/fonts/ below with that location
+      (find and replace works well; the base path appears once per file).
+   3. Keep the %20 in the file names. They are encoded spaces.
+
+   NOTES:
+   - Each weight has its own unique family name, and the font-weight in each
+     @font-face matches the font-weight in its class. This stops clients
+     from faking bold and keeps the fallback fonts at a sensible weight.
+   - Web fonts only load in some clients (Apple Mail, iOS Mail, and a few
+     others). Gmail and Outlook ignore them, so every class has a fallback
+     stack.
+   - Everything is prefixed with "nhg-" or "c751-" so it will not collide
+     with other styles in the larger email.
+   ========================================================================== */
+
+
+/* ---------- @font-face ---------- */
+
+@font-face {
+  font-family: "C751 Semi Bold";
+  src: url("https://YOUR-DOMAIN.com/fonts/Century%20751%20Semi%20Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NHG Display 15 Ultra Thin";
+  src: url("https://YOUR-DOMAIN.com/fonts/Neue%20Haas%20Grotesk%20Display%20Std%2015%20Ultra%20Thin.otf") format("opentype");
+  font-weight: 200;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NHG Display 35 Extra Light";
+  src: url("https://YOUR-DOMAIN.com/fonts/Neue%20Haas%20Grotesk%20Display%20Std%2035%20Extra%20Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NHG Display 45 Light";
+  src: url("https://YOUR-DOMAIN.com/fonts/Neue%20Haas%20Grotesk%20Display%20Std%2045%20Light.otf") format("opentype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NHG Display 55 Roman";
+  src: url("https://YOUR-DOMAIN.com/fonts/Neue%20Haas%20Grotesk%20Display%20Std%2055%20Roman.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NHG Display 65 Medium";
+  src: url("https://YOUR-DOMAIN.com/fonts/Neue%20Haas%20Grotesk%20Display%20Std%2065%20Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "NHG Display 75 Bold";
+  src: url("https://YOUR-DOMAIN.com/fonts/Neue%20Haas%20Grotesk%20Display%20Std%2075%20Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+/* ---------- Utility classes (with fallbacks) ---------- */
+
+.c751-semibold {
+  font-family: "C751 Semi Bold", "Century Schoolbook", Georgia, "Times New Roman", serif;
+  font-weight: bold;
+}
+
+.nhg-15-ultra-thin {
+  font-family: "NHG Display 15 Ultra Thin", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 200;
+}
+
+.nhg-35-extra-light {
+  font-family: "NHG Display 35 Extra Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+.nhg-45-light {
+  font-family: "NHG Display 45 Light", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 300;
+}
+
+.nhg-55-roman {
+  font-family: "NHG Display 55 Roman", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: normal;
+}
+
+.nhg-65-medium {
+  font-family: "NHG Display 65 Medium", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+}
+
+.nhg-75-bold {
+  font-family: "NHG Display 75 Bold", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+}
