@@ -3,11 +3,11 @@
    Paste inside a <style> block in the <head> of the email, or merge into
    your existing email stylesheet.
 
-   BEFORE SENDING:
-   1. Upload the .otf files to a public HTTPS location.
-   2. Replace https://YOUR-DOMAIN.com/fonts/ below with that location
-      (find and replace works well; the base path appears once per file).
-   3. Keep the %20 in the file names. They are encoded spaces.
+   HOSTING:
+   The font files are served from the sgzg/m-fonts GitHub repo through the
+   jsDelivr CDN (https://cdn.jsdelivr.net/gh/sgzg/m-fonts@main/). The
+   files must stay at the root of the repo with the same names. Keep the
+   %20 in the URLs below. They are encoded spaces.
 
    NOTES:
    - Each weight has its own unique family name, and the font-weight in each
@@ -25,49 +25,49 @@
 
 @font-face {
   font-family: "C751 Semi Bold";
-  src: url("https://YOUR-DOMAIN.com/fonts/Century%20751%20Semi%20Bold.otf") format("opentype");
+  src: url("https://cdn.jsdelivr.net/gh/sgzg/m-fonts@main/Century%20751%20Semi%20Bold.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
 }
 
 @font-face {
   font-family: "NHG Display 15 Ultra Thin";
-  src: url("https://YOUR-DOMAIN.com/fonts/Neue%20Haas%20Grotesk%20Display%20Std%2015%20Ultra%20Thin.otf") format("opentype");
+  src: url("https://cdn.jsdelivr.net/gh/sgzg/m-fonts@main/Neue%20Haas%20Grotesk%20Display%20Std%2015%20Ultra%20Thin.otf") format("opentype");
   font-weight: 200;
   font-style: normal;
 }
 
 @font-face {
   font-family: "NHG Display 35 Extra Light";
-  src: url("https://YOUR-DOMAIN.com/fonts/Neue%20Haas%20Grotesk%20Display%20Std%2035%20Extra%20Light.otf") format("opentype");
+  src: url("https://cdn.jsdelivr.net/gh/sgzg/m-fonts@main/Neue%20Haas%20Grotesk%20Display%20Std%2035%20Extra%20Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "NHG Display 45 Light";
-  src: url("https://YOUR-DOMAIN.com/fonts/Neue%20Haas%20Grotesk%20Display%20Std%2045%20Light.otf") format("opentype");
+  src: url("https://cdn.jsdelivr.net/gh/sgzg/m-fonts@main/Neue%20Haas%20Grotesk%20Display%20Std%2045%20Light.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "NHG Display 55 Roman";
-  src: url("https://YOUR-DOMAIN.com/fonts/Neue%20Haas%20Grotesk%20Display%20Std%2055%20Roman.otf") format("opentype");
+  src: url("https://cdn.jsdelivr.net/gh/sgzg/m-fonts@main/Neue%20Haas%20Grotesk%20Display%20Std%2055%20Roman.otf") format("opentype");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
   font-family: "NHG Display 65 Medium";
-  src: url("https://YOUR-DOMAIN.com/fonts/Neue%20Haas%20Grotesk%20Display%20Std%2065%20Medium.otf") format("opentype");
+  src: url("https://cdn.jsdelivr.net/gh/sgzg/m-fonts@main/Neue%20Haas%20Grotesk%20Display%20Std%2065%20Medium.otf") format("opentype");
   font-weight: 500;
   font-style: normal;
 }
 
 @font-face {
   font-family: "NHG Display 75 Bold";
-  src: url("https://YOUR-DOMAIN.com/fonts/Neue%20Haas%20Grotesk%20Display%20Std%2075%20Bold.otf") format("opentype");
+  src: url("https://cdn.jsdelivr.net/gh/sgzg/m-fonts@main/Neue%20Haas%20Grotesk%20Display%20Std%2075%20Bold.otf") format("opentype");
   font-weight: bold;
   font-style: normal;
 }
